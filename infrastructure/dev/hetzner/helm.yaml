@@ -2,6 +2,7 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
   name: hetzner
+  namespace: flux-system
 spec:
   url: https://charts.hetzner.cloud
   interval: 24h
