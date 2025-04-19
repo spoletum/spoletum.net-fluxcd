@@ -7,3 +7,4 @@ resources:
   - helm.yaml
   - secret.yaml
   - csi.yaml
+  - hccm.yaml
