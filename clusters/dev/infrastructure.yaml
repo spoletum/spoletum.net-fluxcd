@@ -1,16 +1,19 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: sops-encryption
+  name: infrastructure
   namespace: flux-system
 spec:
-  interval: 5m
-  path: infrastructure
+  interval: 1h
+  retryInterval: 2m
+  timeout: 10m
   prune: true
+  wait: true
   sourceRef:
     kind: GitRepository
     name: flux-system
+  path: ./infrastructure
   decryption:
     provider: sops
     secretRef:
-      name: sops-age
+      name: sops-age  
