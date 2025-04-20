@@ -2,7 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: hcloud-csi
-  namespace: kube-system
+  namespace: flux-system
 spec:
   interval: 30m
   releaseName: hcloud-csi
@@ -10,6 +10,7 @@ spec:
     spec:
       chart: hcloud-csi
       version: 2.13.0
+      targetNamespace: kube-system
       sourceRef:
         kind: HelmRepository
         name: hetzner
