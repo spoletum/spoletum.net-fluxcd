@@ -6,11 +6,11 @@ metadata:
 spec:
   interval: 30m
   releaseName: hcloud-cloud-controller-manager
+  targetNamespace: kube-system
   chart:
     spec:
       chart: hcloud-cloud-controller-manager
       version: 1.23.0
-      targetNamespace: kube-system
       sourceRef:
         kind: HelmRepository
         name: hetzner

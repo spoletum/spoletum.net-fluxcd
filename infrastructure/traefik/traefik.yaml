@@ -6,11 +6,11 @@ metadata:
 spec:
   interval: 30m
   releaseName: traefik
+  targetNamespace: traefik
   chart:
     spec:
       chart: traefik
       version: 35.0.1
-      targetNamespace: traefik
       sourceRef:
         kind: HelmRepository
         name: traefik
