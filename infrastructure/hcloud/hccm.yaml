@@ -15,3 +15,9 @@ spec:
         kind: HelmRepository
         name: hetzner
         namespace: flux-system
+  values:
+    config:
+      privateNetworks: 
+        enabled: true
+        id: spoletum-dev
+        subnet: 10.0.0.0/24
