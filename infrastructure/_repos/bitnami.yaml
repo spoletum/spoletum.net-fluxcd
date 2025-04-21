@@ -1,8 +1,8 @@
 apiVersion: source.toolkit.fluxcd.io/v1
-kind: HelmRepository
+kind: OCIRepository
 metadata:
-  name: milvus
+  name: bitnami
   namespace: flux-system
 spec:
-  url: https://zilliztech.github.io/milvus-helm/
+  url: oci://registry-1.docker.io/bitnamicharts
   interval: 24h
