@@ -18,4 +18,5 @@ spec:
   values:
     service:
       annotations:
-        load-balancer.hetzner.cloud/location: fsn1
+        load-balancer.hetzner.cloud/network-zone: eu-central
+        load-balancer.hetzner.cloud/use-private-ip: "true"
