@@ -17,12 +17,3 @@ spec:
         kind: HelmRepository
         name: bitnami
         namespace: flux-system
-  values:
-    cluster:
-      enabled: false
-    etcd:
-      replicaCount: 1
-    pulsar:
-      enabled: false
-    minio:
-      mode: standalone
