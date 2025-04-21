@@ -7,6 +7,8 @@ spec:
   interval: 30m
   releaseName: langflow-runtime
   targetNamespace: langflow
+  install:
+    createNamespace: true
   chart:
     spec:
       chart: langflow-runtime

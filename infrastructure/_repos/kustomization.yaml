@@ -4,3 +4,4 @@ resources:
   - hcloud.yaml
   - traefik.yaml
   - arangodb.yaml
+  - langflow.yaml
