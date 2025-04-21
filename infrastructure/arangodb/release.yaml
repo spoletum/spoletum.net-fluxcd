@@ -12,7 +12,7 @@ spec:
       chart: arangodb
       version: 4.2.47
       sourceRef:
-        kind: HelmRepository
+        kind: H elmRepository
         name: bitnami
         namespace: flux-system
   values:
