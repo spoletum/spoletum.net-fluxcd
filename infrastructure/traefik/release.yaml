@@ -7,8 +7,6 @@ spec:
   interval: 30m
   releaseName: traefik
   targetNamespace: traefik
-  install:
-    createNamespace: true
   chart:
     spec:
       chart: traefik
