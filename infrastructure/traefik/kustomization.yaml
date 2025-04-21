@@ -3,4 +3,4 @@ kind: Kustomization
 metadata:
   name: traefik
 resources:
-  - traefik.yaml
+  - release.yaml
