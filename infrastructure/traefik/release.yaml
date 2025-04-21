@@ -22,3 +22,4 @@ spec:
       annotations:
         load-balancer.hetzner.cloud/network-zone: eu-central
         load-balancer.hetzner.cloud/use-private-ip: "true"
+        load-balancer.hetzner.cloud/network: spoletum-dev
