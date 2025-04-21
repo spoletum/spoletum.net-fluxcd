@@ -12,8 +12,8 @@ spec:
   chart:
     spec:
       chart: kube-arangodb
-      version: 0.1.7
+      version: 1.2.47
       sourceRef:
         kind: HelmRepository
-        name: bitnami
+        name: arangodb
         namespace: flux-system

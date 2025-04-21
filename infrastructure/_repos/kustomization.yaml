@@ -3,4 +3,4 @@ kind: Kustomization
 resources:
   - hcloud.yaml
   - traefik.yaml
-  - bitnami.yaml
+  - arangodb.yaml
