@@ -4,4 +4,4 @@ resources:
   - _repos
   - hcloud
   - traefik
-  # - arangodb
+  - arangodb
