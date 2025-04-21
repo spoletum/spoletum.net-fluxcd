@@ -18,4 +18,5 @@ spec:
   values:
     service:
       annotations:
-        load-balancer.hetzner.cloud/name: hetzner
+        load-balancer.hetzner.cloud/name: traefik
+        load-balancer.hetzner.cloud/location: fsn1
