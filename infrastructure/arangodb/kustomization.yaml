@@ -3,6 +3,4 @@ kind: Kustomization
 metadata:
   name: milvus
 resources:
-  - namespace.yaml
-  - repo.yaml
   - release.yaml
