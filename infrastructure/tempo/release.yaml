@@ -17,3 +17,6 @@ spec:
         kind: HelmRepository
         name: grafana
         namespace: flux-system
+  values:
+    service:
+      type: LoadBalancer
