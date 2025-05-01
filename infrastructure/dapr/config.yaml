@@ -1,0 +1,9 @@
+apiVersion: dapr.io/v1alpha1
+kind: Configuration
+metadata:
+  name: tracing-config
+spec:
+  tracing:
+    samplingRate: "1"  # 100% of traces; reduce to "0.1" for 10%
+    zipkin:
+      endpointAddress: "http://tempo.grafana.svc.cluster.local:9411/api/v2/spans"
