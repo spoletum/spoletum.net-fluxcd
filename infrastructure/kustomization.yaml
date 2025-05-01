@@ -4,5 +4,5 @@ resources:
   - _repos
   - hcloud
   - traefik
-  - otel-collector
+  - tempo
   - dapr
