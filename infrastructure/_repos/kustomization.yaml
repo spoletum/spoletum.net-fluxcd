@@ -4,4 +4,4 @@ resources:
   - hcloud.yaml
   - traefik.yaml
   - dapr.yaml
-  - otel.yaml
+  - grafana.yaml
