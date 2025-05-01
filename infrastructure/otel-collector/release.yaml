@@ -18,4 +18,4 @@ spec:
         name: open-telemetry
         namespace: flux-system
   values:
-    mode: dameonset
+    mode: daemonset
