@@ -18,3 +18,6 @@ spec:
         name: dapr
         namespace: flux-system
   values:
+    global:
+      ha:
+        replicaCount: 1
