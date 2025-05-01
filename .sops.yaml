@@ -1,0 +1,4 @@
+creation_rules:
+  - filename_regex: '.*\.ya?ml$'
+    encrypted_regex: ^(data|stringData)$
+    age: 'age1hnqczxtcgk93gnlng7t58rah58tszdwz5ql0hjs7mcc5fr3lhpmqwwlkre'
