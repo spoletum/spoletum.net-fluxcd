@@ -1,8 +1,8 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
-  name: arangodb
+  name: open-telemetry
   namespace: flux-system
 spec:
-  url: https://arangodb.github.io/kube-arangodb
+  url: https://open-telemetry.github.io/opentelemetry-helm-charts
   interval: 24h

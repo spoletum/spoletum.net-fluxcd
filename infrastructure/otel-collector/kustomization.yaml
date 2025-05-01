@@ -1,8 +1,4 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - _repos
-  - hcloud
-  - traefik
-  - otel-collector
-  - dapr
+  - release.yaml
