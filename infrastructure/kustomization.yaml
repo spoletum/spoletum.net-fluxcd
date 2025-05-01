@@ -4,3 +4,4 @@ resources:
   - _repos
   - hcloud
   - traefik
+  - dapr
