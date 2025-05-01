@@ -15,4 +15,7 @@ spec:
         kind: HelmRepository
         name: hcloud
         namespace: flux-system
+  values:
+    node:
+      kubeletDir: /var/lib/k0s/kubelet
   
