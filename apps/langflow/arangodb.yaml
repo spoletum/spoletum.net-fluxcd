@@ -1,7 +1,0 @@
-apiVersion: database.arangodb.com/v1
-kind: ArangoDeployment
-metadata:
-  name: langflow
-  namespace: langflow
-spec:
-  mode: Cluster
