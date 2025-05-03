@@ -6,3 +6,4 @@ resources:
   - dapr.yaml
   - grafana.yaml
   - yugabyte.yaml
+  - cert-manager.yaml
