@@ -12,7 +12,7 @@ spec:
   chart:
     spec:
       chart: traefik
-      version: 35.0.1
+      version: 35.2.0
       sourceRef:
         kind: HelmRepository
         name: traefik
@@ -22,7 +22,7 @@ spec:
       initContainers:
         - name: volume-permissions
           image: busybox:latest
-          command: ["sh", "-c", "ls -la /; touch /data/acme.json; chmod -v 600 /data/acme.json"]
+          command: ["sh", "-c", "touch /data/acme.json; chmod -v 600 /data/acme.json"]
           volumeMounts:
           - mountPath: /data
             name: data
