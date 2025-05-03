@@ -23,7 +23,7 @@ spec:
         # Ugly hack as explained in the values.yaml template.
         - name: init-letsencrypt
           image: busybox:latest
-          command: ["sh", "-c", "mkdir -p /data; chmod 600 /data/.; touch /data/acme.json"]
+          command: ["sh", "-c", "mkdir -p /data; chmod -R 600 /data; touch /data/acme.json"]
           volumeMounts:
             - name: data
               mountPath: /data
