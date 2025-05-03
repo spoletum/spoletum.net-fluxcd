@@ -5,3 +5,4 @@ resources:
   - traefik.yaml
   - dapr.yaml
   - grafana.yaml
+  - yugabyte.yaml
