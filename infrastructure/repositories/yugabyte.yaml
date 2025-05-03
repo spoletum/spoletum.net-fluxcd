@@ -1,0 +1,8 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: HelmRepository
+metadata:
+  name: yugabyte
+  namespace: flux-system
+spec:
+  url: https://charts.yugabyte.com
+  interval: 24h
