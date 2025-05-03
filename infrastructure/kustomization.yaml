@@ -5,5 +5,4 @@ resources:
   - alloy
   - hcloud
   - traefik
-  - yugabyte
   - dapr
