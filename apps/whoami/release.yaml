@@ -1,0 +1,19 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: whoami
+  namespace: flux-system
+spec:
+  interval: 30m
+  releaseName: whoami
+  targetNamespace: whoami
+  install:
+    createNamespace: true
+  chart:
+    spec:
+      chart: whoami
+      version: 5.3.0
+      sourceRef:
+        kind: HelmRepository
+        name: cowboysysop
+        namespace: flux-system

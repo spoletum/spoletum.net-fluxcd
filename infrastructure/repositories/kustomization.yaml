@@ -7,3 +7,4 @@ resources:
   - grafana.yaml
   - yugabyte.yaml
   - cert-manager.yaml
+  - cowboysysop.yaml
