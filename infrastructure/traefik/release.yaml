@@ -17,3 +17,7 @@ spec:
         kind: HelmRepository
         name: traefik
         namespace: flux-system
+  values:
+    service:
+      annotations:
+        load-balancer.hetzner.cloud/network-zone: eu-central
