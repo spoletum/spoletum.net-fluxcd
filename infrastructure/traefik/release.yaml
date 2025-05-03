@@ -30,6 +30,7 @@ spec:
       fsGroup: 65532
       fsGroupChangePolicy: "OnRootMismatch"
     service:
+      type: LoadBalancer
       externalTrafficPolicy: Local
       annotations:
         load-balancer.hetzner.cloud/network-zone: eu-central
