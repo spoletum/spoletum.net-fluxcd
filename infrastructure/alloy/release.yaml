@@ -15,5 +15,5 @@ spec:
       version: 1.0.2
       sourceRef:
         kind: HelmRepository
-        name: alloy
+        name: grafana
         namespace: flux-system
