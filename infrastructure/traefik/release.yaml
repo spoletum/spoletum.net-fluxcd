@@ -20,10 +20,13 @@ spec:
   values:
     deployment:
       initContainers:
-        # Ugly hack as explained in the values.yaml template.
-        - name: init-letsencrypt
-          image: busybox:latest
-          command: ["sh", "-c", "mkdir -p /data; chmod -R 600 /data; touch /data/acme.json"]
+        - name: traefik-data-init
+          image: alpine:3.21
+          command:
+            - chown
+            - -R  
+            - 600:600
+            - /data
           volumeMounts:
             - name: data
               mountPath: /data
