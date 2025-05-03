@@ -17,3 +17,10 @@ spec:
         kind: HelmRepository
         name: cowboysysop
         namespace: flux-system
+  values:
+    ingress:
+      enabled: true
+      hosts:
+        - host: whoami.dev.spoletum.net
+          paths:
+            - /
