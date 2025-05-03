@@ -36,3 +36,8 @@ spec:
         kind: HelmRepository
         name: hcloud
         namespace: flux-system
+  values:
+    env:
+      # See line 29 of https://github.com/hetznercloud/hcloud-cloud-controller-manager/blob/main/chart/values.yaml
+      - name: HCLOUD_NETWORK
+        value: spoletum-nonprod
